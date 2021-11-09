@@ -1,0 +1,11 @@
+<%= form_for(@track) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <%= f.label :artist %>
+  <%= f.text_field :artist %>
+  <%= f.label :length %>
+  <%= f.number_field :length %>
+  <%= f.label :published %>
+  <%= f.date_field :published %>
+  <%= f.submit %>
+<% end %>

@@ -1,0 +1,10 @@
+<h1><%= @track.title %></h1>
+
+<p>author: <%= @track.artist %></p>
+<p>length: <%= @track.length %> min</p>
+<p>published: <%= @track.published %></p>
+
+
+<%= link_to 'back', tracks_path %>
+<%= link_to 'edit', edit_track_path(@track) %>
+<%= link_to 'delete', destroy_track_path(@track), method: :delete, data: { confirm: "Are you sure?" } %>

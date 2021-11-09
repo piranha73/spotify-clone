@@ -1,0 +1,8 @@
+<h1>Your Playlist 🎶</h1>
+
+<% @tracks.each do |track| %>
+  <div style="display: flex; width: 200px; justify-content: space-between;">
+    <%= link_to track.title, track_path(track) %>
+    <p><%= track.length %></p>
+  </div>
+<% end %>
